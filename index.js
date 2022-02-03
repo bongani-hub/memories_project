@@ -25,4 +25,4 @@ const CONNECTION_URL = 'mongodb+srv://Bongz:tjdBDRpUQXW9P5x@cluster0.hj2nw.mongo
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Server running on port: http://localhost: ${PORT}`)))
-    .catch((error) => console.log(`{error} did not connect`));
+    .catch((error) => console.log(`${error} did not connect`));
