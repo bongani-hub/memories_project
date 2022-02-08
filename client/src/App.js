@@ -7,7 +7,8 @@ import Form from './components/Form/Form';
 import { getPosts } from './actions/posts';
 import useStyles from './styles';
 import memories from './images/memories.png';
-import naruto from './images/naruto.jpg';
+
+
 
 const App = () => {
   const [currentId, setCurrentId] = useState(0);
@@ -30,7 +31,7 @@ const App = () => {
         <Grid container justifyContent="space-between"  alignItems="stretch" spacing={3}>
             <Grid item xs={12} sm={7}>
               <Posts setCurrentId={setCurrentId} />
-              <img src={naruto} height="100%"  />
+             
             </Grid>
             <Grid item xs={12} sm={4}>
               <Form currentId={currentId} setCurrentId={setCurrentId} />
